@@ -5,7 +5,7 @@ const router = Router();
 
 const MY_DOMAIN = process.env.MY_DOMAIN;
 
-const products = [
+const fakeProducts = [
 	{
 		price: 1,
 		description:
@@ -16,7 +16,7 @@ const products = [
 ];
 
 router.get("/", (req, res) => {
-	res.render("index", { products });
+	res.render("index", { products: fakeProducts });
 });
 
 router.post("/checkout", async (req, res) => {
