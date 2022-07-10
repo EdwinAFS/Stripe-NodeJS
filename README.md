@@ -1,6 +1,6 @@
 # Payments con Stripe Checkout
 
-Ejemplo de integración con Stripe [Checkout](https://stripe.com/docs/payments/checkout).
+Stripe integration example [Checkout](https://stripe.com/docs/payments/checkout).
 
 <details open><summary>Card with an example</summary>
 <img src="./example/product.png" alt="Checkout payment" align="center">
