@@ -1,0 +1,39 @@
+<div class="row">
+	<div class="col-md-4 mx-auto">
+
+		{{#if products}}
+			{{#each products}}
+				<div class="card">
+					<img
+						class="card-img-top"
+						src="img/ubuntu.jpeg"
+						alt="Ubuntu"
+					/>
+					<div class="card-body">
+						<h3>$ {{this.price}}</h3>
+						<p>{{this.description}}</p>
+					</div>
+					<div class="card-footer">
+						<form action="/checkout" method="POST">
+							<input
+								type="hidden"
+								name="price_id"
+								value={{this.price_id}}
+							/>
+
+							<button
+								id="checkout-button"
+								type="submit"
+								class="btn btn-dark w-100"
+							>
+								<i class="fas fa-shopping-cart"></i>
+								Buy
+							</button>
+						</form>
+					</div>
+				</div>
+			{{/each}}
+		{{/if}}
+
+	</div>
+</div>

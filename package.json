@@ -1,0 +1,22 @@
+{
+	"name": "stripe-nodejs",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "nodemon src/index"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"dotenv": "^16.0.1",
+		"express": "^4.18.1",
+		"express-handlebars": "^6.0.6",
+		"stripe": "^9.12.0"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.19"
+	}
+}
